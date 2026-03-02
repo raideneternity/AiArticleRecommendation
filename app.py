@@ -9,10 +9,7 @@ app = Flask(__name__)
 print("Starting server...")
 
 # 1. Load Model
-try:
-    model = SentenceTransformer('my_fyp_model')
-except:
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('my_fyp_model')
 
 # 2. Load Database
 with open('fyp_search_index.faiss', 'rb') as f:
