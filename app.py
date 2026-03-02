@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer
+import os
 
 app = Flask(__name__)
 
